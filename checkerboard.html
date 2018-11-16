@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body onload="draw()">
+  <canvas id="sketch" width="1000" height="1000">
+  </canvas>
+  <script>
+    function draw(){
+      var sketch = document.getElementById('sketch');
+    	var context = sketch.getContext("2d");
+          context.fillStyle = "#000000"
+          context.fillRect(0, 0, 400, 400)
+          context.fillStyle = "#ffffff"
+          context.fillRect(1, 1, 398, 398)
+          context.fillStyle = "#000000"
+          for(var b = 0 ; b < 8; b = b + 1){
+            if(b % 2 === 1){
+              context.fillStyle = "#000000"
+              context.fillRect(50 * b, 0, 50, 50)
+            }
+            for(var i = 0 ; i < 8; i = i + 1){
+              if(i % 2 === 0){
+                context.fillStyle = "#000000"
+                context.fillRect(0, 0 * i, 50, 50)
+              }
+              }
+          }
+
+    }
+  </script>
+  </body>
+</html>
