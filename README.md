@@ -1,2 +1,4 @@
 # lab-11-canvas
-This is lab 11...we're playing with canvas
+This is lab 11...we're playing with canvas 
+CheckerBoard
+checkersgame.html
