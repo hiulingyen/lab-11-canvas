@@ -24,7 +24,10 @@
              if(j % 2 === 0) {
                context.fillStyle = 'white';
              } else {
-               context.fillStyle = 'black';
+               context.beginPath();
+               context.arc(60, 120, 20, 0 , 2 * Math.PI, true);
+               context.closePath();
+               context.fill();
              }
            }else {
              if(j % 2 === 0){
